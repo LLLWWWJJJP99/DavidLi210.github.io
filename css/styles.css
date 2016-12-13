@@ -1,0 +1,214 @@
+@charset "UTF-8";
+	/*the css below is for the entire page  */
+    body{
+	   	height:1000px;
+	   	width:100%;
+    }
+   	img{
+	width:300px;
+	height:300px;
+	}
+    footer {
+	    background-color: #555;
+	    color: white;
+	    padding: 15px;
+	    width:100%;
+	    height:10%;
+    }
+   	a {
+	text-decoration: none;
+	}
+	/*the css below is for the nav */
+	.nav.navbar-nav{
+		font-size:1.5em;
+		font-style:italic;
+		font-weight:bold;
+	}
+    .navbar.navbar-inverse{
+    	padding:20px;
+    	height:10%;
+    	width:100%;
+    }
+    .navbar {
+	    margin-bottom: 0;
+	    border-radius: 0;
+    }
+    .time{
+     	padding-top: 35px;
+    }
+    /*the css below is for the main content of this page  */
+	.row.content{
+		padding:10px;
+		margin:10px;
+	}
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    #objective{
+ 
+	  border-radius:5px;
+      
+      background-color: #f1f1f1;
+ 
+    }
+    .col-sm-2.sidenav{
+	    float:left;
+	    width:20%;
+	    height:50%;
+	    line-height:2em;
+	    border-radius:15px;
+	    font-size:1.5em;
+		font-style:italic;
+		font-weight:bold;
+    }
+    .col-sm-2.sidenav a:hover{
+    	color:white;
+    }
+    .col-sm-8.text-left{
+    	float:left;
+    	width:40%;
+    	height:100%;
+    	
+    }
+    .col-sm-8.text-left li{
+    	font-size:15px;
+		font-style:italic;
+    }
+    .Skills_and_Hobbies{
+    	font-size:15px;
+		font-style:italic;
+    }
+   	.empty{
+	clear:both;
+	}
+	.img{
+		overflow: hidden;
+		margin-bottom:10px;
+		width:300px;
+		float:left;
+		height:300px;
+		background-color: #f1f1f1;
+		border-radius:15px;
+		text-align:center;
+		font-size:1em;
+		font-style:italic;
+		font-weight:bold;
+		position:relative;
+	}
+		.img ul{
+		
+		list-style-type:none;
+	}
+	.font{
+		
+		font-size:2em;
+		font-style:italic;
+		font-weight:bold;
+	}
+	/*the css below is for the loop playback of pictures*/
+	.d4,.d2,.d3{
+		width: 300px;
+		height: 300px;
+		/*display: inline-block;*/
+		float: left;
+	}
+	.d1{
+		width: 1200px;
+		height: 300px;
+		position: absolute;
+		animation:cs 5s linear infinite;
+		animation-direction: normal;
+	}
+	.d2{
+		
+		background: green;
+	}
+	.d3{
+
+		background: red;
+	}
+	.d4{
+
+		background: blue;
+	}
+
+	@keyframes cs{
+	0% {left: 0px;}
+	60%{left: -300px;}
+	80%{left: -600px;}
+	100%{left: -900px;}
+	}
+
+/*the css part below is for the div that class="folder"  */
+	.fold {
+		margin-top: 10px;
+		width: 40%;
+		float: left;
+		height: 50%;
+		border-radius: 15px;
+	}
+	
+	h3+div {
+		height: 0px;
+		overflow: hidden;
+		transition: all 1s ease;
+		background: #f1f1f1;
+		border-radius:15px;
+
+		font:20px italic;
+	}
+	
+	.se {
+		width: 100%;
+		margin-top: 3px;
+
+	}
+	h3 {
+		background: rgba(180, 80, 30, 0.8);
+		padding: 5px 25px;
+		border-radius: 15px;
+	}
+	h4 {
+		
+		padding: 5px 25px;
+		font-style:italic;
+		font-weight:bold;
+	}
+	.se:hover h3+div {
+		height: 300px;
+		overflow: auto;
+		background: #f1f1f1;
+		border-radius:15px;
+
+		font:20px italic;
+	}
+
+/*the css below is for the login page */
+	form{
+	width: 100%;
+	height:100%;
+	background: #9370D8;
+	padding: 10px;
+	margin-bottom:100px;
+	border-radius:15px;
+	}
+	input{
+	margin:20px;
+	padding: 5px;
+	background: #f8f8f8;
+	width: 200px;
+	}
+	button{
+	margin:20px;
+	padding: 8px; 
+	background: #f8f8f8;
+	border-radius: 5px;
+	}
+	button:hover{
+	background: #2F4F4F
+	}
+	input:focus{
+	background: #FFC0CB
+	}
